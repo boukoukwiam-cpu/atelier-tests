@@ -1,6 +1,6 @@
 
 const request = require('supertest');
-const app = require('../../src/server');
+const app = require('../../src/app');
 
 jest.mock('../../src/mailer', () => ({
   envoyer: jest.fn().mockResolvedValue(undefined)
