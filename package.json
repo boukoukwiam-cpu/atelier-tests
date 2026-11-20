@@ -9,6 +9,7 @@
     "test": "jest",
     "test:unit": "jest tests/unit --coverage",
     "test:int": "jest tests/integration --runInBand",
+    "test:cov": "jest --runInBand --coverage",
     "test:e2e": "playwright test"
   },
   "keywords": [],
