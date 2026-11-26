@@ -45,3 +45,7 @@ describe('Tests d’intégration API Users', () => {
   });
 
 });
+test('ne divulgue pas la technologie du serveur', async () => {
+  const res = await request(app).get('/users/1');
+  expect(res.headers['x-powered-by']).toBeUndefined();
+});
